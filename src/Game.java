@@ -1,6 +1,7 @@
-public class Game extends Room {
+public class Game {
 
     String[][] room;
+    int[] player_position = Player.player_position;
 
     public static void printRoom(String[][] room) {
         for (String[] row : room) {
@@ -11,8 +12,14 @@ public class Game extends Room {
         }
     }
 
+
+
+    public static void gameInit(String[][] room, int[] player_position) {
+        Player.generateRandomPlayerPosition(player_position);
+    }
+
     public Game() {
-        this.room = Room.room;
+        this.room = Level.dungeon;
         printRoom(room);
     }
 }
