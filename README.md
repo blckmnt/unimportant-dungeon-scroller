@@ -21,7 +21,7 @@ Just simple TUI "dungeon scroller" game to test my Java skillz :)
 
 ### Running the game
 - #### In VSCode (integrated terminal)
-    Go inside /src/Main.java
+    Go inside src/Main.java
 
     Click on "Run", above the main method
 
